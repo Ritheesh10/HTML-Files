@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <form action="" method="" autocomplete="off" >
+       <div> <label for="name">Name:</label>
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="EnterName" readonly value="Rith007" name="name" id="name" pattern=[a-z,A-Z].{8,} required autofocus></div>
+        <div><label for="pass">Password</label><i class="fas fa-unlock"></i>
+            <input type="password" name="pass"  id="pass" pattern='(?=.*[a-z]{1})(?=.*[A-Z])(?=.*\d)(?=.*[$*&,]).{8,}' title="" ></div>
+        <div><label for="dob">DOB:</label>
+            <input type="date" name="dob" id="dob" ></div>
+        <div><label for="mail">Email</label>
+            <input  type="mail" multiple name="mail" id="mail" ></div>
+        <div><label for="age">AGE:</label>
+            <input type="number" name="age" id="age" ></div>
+            <div>
+                <label for="">Gender:</label>
+                <input type="radio" name="gender" value="male"  id="male" >
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female" >
+                <label for="female">Female</label>
+            </div>
+        <div><label for="mobile">Mobile Number:</label>
+            <input type="tel" name="mobile" id="mobile" pattern=[6-9]{1}[0-9]{9} maxlength="10"></div>
+            <div>
+                <label for="time">Time</label>
+                <input type="time" name="time" id="time" >
+            </div>
+            <div>
+                <label for="dt">Date and Time:</label>
+                <input type="datetime-local" name="dt" id="dt" >
+            </div>
+            <div>
+                <label for="">Languages known:</label>
+                <input type="checkbox" value="kannada" name="lang" id="Kannada" >
+                <label for="Kannada">Kannada</label>
+                <input type="checkbox" value="English" name="lang" id="English" >
+                <label for="English">English</label>
+                <input type="checkbox" value="Spanish" name="lang" id="Spanish" >
+                <label for="Spanish">Spanish</label>
+                <input type="checkbox" value="Japanese" name="lang" id="Japanese" >
+                <label for="Japanese">Japanese</label>
+            </div>
+<div >
+    <label for="tech">Tech Known:</label>
+    <select name="tech" id="tech" multiple >
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+        <option value="java">Java</option>
+        <option value="react" >React</option>
+        <option value="sql">SQl</option>
+        <option value="node">Node</option>
+        <option value="python">Python</option>
+    </select>
+</div>
+
+<div>
+    <label for="textarea">Comment here</label>
+    <textarea name="textarea" id="textarea" cols="30" rows="10" ></textarea>
+</div>
+<input type="file" name="file" id="file" alt="">
+
+<button>
+    <label for="demo">Upload</label>
+
+<input type="file" name="files" id="demo" hidden></button>
+
+<div>
+    <input type="range" max="200" min="50">
+</div>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+    </form>
+
+    <p>hello &nbsp; hello</p>
+</body>
+</html>

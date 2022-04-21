@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body{
+            color: white;
+            background-color: brown;
+        }
+        table{
+            border: 1px solid white;
+            padding: 20px;
+            margin-left: 25%;
+        }
+        .gender label{
+            font-size: 15px;
+        }
+        .reg{
+            padding: 1px 120px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" name="Name" id="name" placeholder="your name"></td>
+            </tr>
+            <tr>
+                <td><label for="mail">Email:</label></td>
+                <td><input type="mail" id="mail" name="Email" placeholder="your mail"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password:</label></td>
+                <td><input type="password" id="pass" name="Password"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="Phonenumber"></td>
+            </tr>
+            <tr>
+              <td>  <label for="">Gender:</label></td>
+              <td class="gender">
+                <label for="male">Male:</label>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="female">Female:</label>
+                <input type="radio" name="gender" value="female" id="female">
+            <label for="others">Others:</label><input type="radio" name="gender" value="others" id="others">
+              </td>
+            </tr>
+            <tr>
+                <td><label for="lang">Language:</label></td>
+                <td><input list="langs" id="lang" name="Language" placeholder="Select the Language">
+                <datalist id="langs">
+                    <option value="Kannada">Kannada</option>
+                    <option value="English">English</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="German">German</option>
+                </datalist></td>
+            </tr>
+            <tr>
+                <td><label for="zip">Zip Code:</label></td>
+                <td><input type="tel" name="Zipcode" id="zip"  minlength="5"></td>
+            </tr>
+            <tr>
+                <td><label for="about">About:</label></td>
+                <td><textarea name="about" id="about" cols="" rows=""></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="5"><button class="reg" type="submit">Register</button></td>
+            </tr>
+        </table>
+        
+    </form>
+</body>
+</html>
